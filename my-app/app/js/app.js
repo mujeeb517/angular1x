@@ -3,15 +3,15 @@ var myApp = angular.module('myApp', ['ngRoute']);
 myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: 'app/views/home.html',
+            templateUrl: '/app/views/home.html',
             controller: 'HomeController'
         })
         .when('/about', {
-            templateUrl: 'app/views/about.html',
+            templateUrl: '/app/views/about.html',
             controller: 'AboutController'
         })
         .when('/contact', {
-            templateUrl: 'app/views/contact.html',
+            templateUrl: '/app/views/contact.html',
             controller: 'ContactController'
         })
         .otherwise({ redirectTo: '/' });
