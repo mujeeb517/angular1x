@@ -1,0 +1,18 @@
+{
+  "name": "angular1x-grunt",
+  "description": "",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "https://github.com/mujeeb517/angular1x",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.8.3",
+    "angular-route": "^1.8.3"
+  }
+}

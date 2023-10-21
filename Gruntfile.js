@@ -5,7 +5,7 @@ module.exports = function (grunt) {
                 options: {
                     port: 9000,
                     hostname: 'localhost',
-                    base: 'my-app',
+                    base: ['my-app', 'bower_components'],
                     open: {
                         target: 'http://localhost:9000/my-app/'
                     },
@@ -45,6 +45,12 @@ module.exports = function (grunt) {
                         cwd: 'my-app',
                         src: 'app/views/*.html',
                         dest: 'dist/'
+                    },
+                    {
+                        expand: true,
+                        cwd: '.',
+                        src: 'bower_components/**/*',
+                        dest: 'dist/'
                     }
                 ]
             }
@@ -78,7 +84,7 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'uglify',
         'cssmin',
-        'copy'
+        'copy',
     ]);
 
     grunt.registerTask('default', ['connect', 'watch']);
