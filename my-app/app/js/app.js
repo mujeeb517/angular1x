@@ -20,10 +20,6 @@ myApp.config(['$routeProvider', '$locationProvider', function ($routeProvider, $
 
 }]);
 
-myApp.controller('HomeController', ['$scope', function ($scope) {
-    // Home Controller Logic
-}]);
-
 myApp.controller('AboutController', ['$scope', function ($scope) {
     // About Controller Logic
 }]);
